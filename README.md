@@ -1,4 +1,3 @@
-sailsjs_tests
-=============
+# sailsjs_tests
 
-SailsJS API tests
+a [Sails](http://sailsjs.org) application
