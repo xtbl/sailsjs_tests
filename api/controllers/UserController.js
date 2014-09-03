@@ -13,7 +13,11 @@ module.exports = {
    * `UserController.index()`
    */
   index: function (req, res) {
-    TestService.testService();
+//    TestService.testService();
+    var redditItems = new Reaper;
+    console.log(redditItems);
+    console.log(redditItems.get());
+
     return res.json({
       todo: 'index() is not implemented yet!'
     });

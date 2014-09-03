@@ -11,8 +11,9 @@ module.exports = {
         var timeObj = dateObj.getTime();
 
         var minutes = 1,
-            the_interval = minutes * 60 * 10;
+            the_interval = minutes * 60 * 100;
 
+        // TODO: use https://github.com/ncb000gt/node-cron
         setInterval(
             function() {
                 console.log("interval works");
