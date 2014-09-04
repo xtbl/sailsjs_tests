@@ -15,7 +15,7 @@ module.exports = {
   index: function (req, res) {
 //    TestService.testService();
     var redditItems = new Reaper;
-    console.log(redditItems);
+    console.log("redditItems", redditItems);
     console.log(redditItems.get());
 
     return res.json({
