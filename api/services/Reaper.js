@@ -32,6 +32,7 @@ PROCESS items
       reduce each received item according to the data model
             create a fits-all-cases data model
                 processItems function (collection, serviceProcessorCb)
+                    serviceProcessorCb["serviceName"]
       create a collection with the processed items
 */
 
