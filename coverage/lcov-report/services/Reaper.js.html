@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for All files</title>
+    <title>Code coverage report for services/Reaper.js</title>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="prettify.css">
+    <link rel="stylesheet" href="../prettify.css">
 
     <style>
         body, html {
@@ -195,77 +195,333 @@
     </style>
 </head>
 <body>
-<div class="header medium">
-    <h1>Code coverage report for <span class="entity">All files</span></h1>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">services/Reaper.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">50% <small>(7 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">41.67% <small>(5 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">40% <small>(2 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">25% <small>(1 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">50% <small>(7 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">41.67% <small>(5 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"></div>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">services/</a> &#187; Reaper.js</div>
 </div>
 <div class="body">
-<div class="coverage-summary">
-<table>
-<thead>
-<tr>
-   <th data-col="file" data-fmt="html" data-html="true" class="file">File</th>
-   <th data-col="pic" data-type="number" data-fmt="html" data-html="true" class="pic"></th>
-   <th data-col="statements" data-type="number" data-fmt="pct" class="pct">Statements</th>
-   <th data-col="statements_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="branches" data-type="number" data-fmt="pct" class="pct">Branches</th>
-   <th data-col="branches_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="functions" data-type="number" data-fmt="pct" class="pct">Functions</th>
-   <th data-col="functions_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="lines" data-type="number" data-fmt="pct" class="pct">Lines</th>
-   <th data-col="lines_raw" data-type="number" data-fmt="html" class="abs"></th>
-</tr>
-</thead>
-<tbody><tr>
-	<td class="file high" data-value="controllers/"><a href="controllers/index.html">controllers/</a></td>
-	<td data-value="100" class="pic high"><span class="cover-fill cover-full" style="width: 100px;"></span><span class="cover-empty" style="width:0px;"></span></td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="2" class="abs high">(2&nbsp;/&nbsp;2)</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">(0&nbsp;/&nbsp;0)</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="1" class="abs high">(1&nbsp;/&nbsp;1)</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="2" class="abs high">(2&nbsp;/&nbsp;2)</td>
-	</tr>
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ Reaper Service
+ - retrieves the collection of objects from a service
+&nbsp;
+ @param service
+ @param options
+ */
+&nbsp;
+// delete:
+// exporting classes: http://stackoverflow.com/questions/18020113/exporting-classes-with-node-js
+// create promises: http://howtonode.org/promises
+// nodejs rest example: http://rapiddg.com/blog/calling-rest-api-nodejs-script
+&nbsp;
+// Todo: use inheritance to create reaper children (for each service if needed)
+// check nodejs export design patterns: http://bites.goodeggs.com/posts/export-this/
+&nbsp;
+//reddit: http://www.reddit.com/r/&lt;subreddit&gt;/new.json?sort=new
+&nbsp;
+//TODO: GET, PROCESS and SAVE (add tests)
+// tests: https://blog.sergiocruz.me/unit-test-sailsjs-with-mocha-and-instanbul-for-code-coverage/
+// check getting started guide http://sailsjs.org/#!getStarted
+/*
+GET item collection
+      receive a service definition
+      Reaper.get(serviceOptions) (options object for each service or an array of objects)
+      make an API call to the service to retrieve a collection of items
+&nbsp;
+*/
+&nbsp;
+/*
+PROCESS items
+      reduce each received item according to the data model
+            create a fits-all-cases data model
+                processItems function (collection, serviceProcessorCb)
+                    serviceProcessorCb["serviceName"]
+      create a collection with the processed items
+*/
+&nbsp;
+/*
+SAVE items into db
+      save the new processed item collection into db
+&nbsp;
+*/
+//item data model
+//_id
+//title
+//created
+//image
+//tags/topics: []
+//rating
+//source
+/*
+===============
+|   REDDIT    |
+===============
+{data:
+  children[
+      data
+            "domain": "i.imgur.com",
+            "subreddit": "girlsinyogapants",
+            "id": "2ff7tz"
+            "score": 7,
+            "over_18": true,
+            "thumbnail": "http://b.thumbs.redditmedia.com/sARBZFkLYJcQSa10z8etne7wZteNpV_QyTaClahlujE.jpg",
+            "created": 1409829956,
+            "url": "http://i.imgur.com/te2Eqna.jpg",
+            "title": "Are shorts okay?.... x-post from /r/RandomSexiness",
+]
+*/
+&nbsp;
+var http = require('http');
+&nbsp;
+var Reaper = function (serviceOptions) {
+&nbsp;
+    //Todo: change to receive options parameter
+    this.options = {
+        host: "www.reddit.com",
+        port: 80,
+        path: "/r/girlsinyogapants/new.json?sort=new",
+        method: "GET"
+    };
+};
+&nbsp;
+&nbsp;
+Reaper.prototype.get = <span class="fstat-no" title="function not covered" >function() {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    http.request(this.options, <span class="fstat-no" title="function not covered" >function(res) {</span></span>
+<span class="cstat-no" title="statement not covered" >        console.log('STATUS: ' + res.statusCode);</span>
+<span class="cstat-no" title="statement not covered" >        console.log('HEADERS: ' + JSON.stringify(res.headers));</span>
+<span class="cstat-no" title="statement not covered" >        res.setEncoding('utf8');</span>
+<span class="cstat-no" title="statement not covered" >        res.on('data', <span class="fstat-no" title="function not covered" >function (chunk) {</span></span>
+<span class="cstat-no" title="statement not covered" >            console.log('BODY: ' + chunk);</span>
+        });
+    }).end();
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return {title:"title",image:"image"};</span>
+};
+&nbsp;
+module.exports = Reaper;</pre></td></tr>
+</table></pre>
 
-<tr>
-	<td class="file low" data-value="services/"><a href="services/index.html">services/</a></td>
-	<td data-value="41.67" class="pic low"><span class="cover-fill" style="width: 41px;"></span><span class="cover-empty" style="width:59px;"></span></td>
-	<td data-value="41.67" class="pct low">41.67%</td>
-	<td data-value="12" class="abs low">(5&nbsp;/&nbsp;12)</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">(0&nbsp;/&nbsp;0)</td>
-	<td data-value="25" class="pct low">25%</td>
-	<td data-value="4" class="abs low">(1&nbsp;/&nbsp;4)</td>
-	<td data-value="41.67" class="pct low">41.67%</td>
-	<td data-value="12" class="abs low">(5&nbsp;/&nbsp;12)</td>
-	</tr>
-
-</tbody>
-</table>
-</div>
 </div>
 <div class="footer">
     <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Sep 07 2014 14:24:37 GMT-0600 (CST)</div>
 </div>
 
-<script src="prettify.js"></script>
+<script src="../prettify.js"></script>
 
 <script src="https://yui-s.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
 <script>
