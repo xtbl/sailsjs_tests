@@ -68,9 +68,36 @@ SAVE items into db
 ]
 */
 
+
+/**
+ *
+ * Constructs Reaper objects
+ * @class Reaper
+ * @constructor
+ * @param {String} type of service
+ *
+ */
+
 var http = require('http');
 
-var Reaper = function (serviceOptions) {
+var Reaper = function (serviceType) {
+
+   // types of services: twitter, reddit, tumblr...
+   this.services = {
+       reddit: {
+           host: "www.reddit.com",
+           port: 80,
+           path: "/r/girlsinyogapants/new.json?sort=new",
+           method: "GET"
+       }
+   };
+
+   // type of Reaper: the type of service used
+   this.ReaperType = {};
+
+   this.init = function() {
+       this.ReaperType = this.services[serviceType] || null;
+   };
 
     //Todo: change to receive options parameter
     this.options = {
@@ -95,6 +122,17 @@ Reaper.prototype.get = function() {
 
 
     return {title:"title",image:"image"};
+};
+
+
+Reaper.prototype.processItems = function() {
+//    JSON.parse();
+//    JSON.stringify();
+    return false;
+};
+
+Reaper.prototype.save = function() {
+    return false;
 };
 
 module.exports = Reaper;
