@@ -82,46 +82,82 @@ var http = require('http');
 
 var Reaper = function (serviceType) {
 
-   // types of services: twitter, reddit, tumblr...
+   this.serviceType = serviceType;
+
+   // type of service: twitter, reddit, tumblr...
    this.services = {
        reddit: {
            host: "www.reddit.com",
            port: 80,
            path: "/r/girlsinyogapants/new.json?sort=new",
            method: "GET"
+       },
+       twitter: {
+           host: "www.reddit.com",
+           port: 80,
+           path: "/r/girlsinyogapants/new.json?sort=new",
+           method: "GET"
        }
    };
-
+   this.rawResponseData = {};
+   this.getRawResponseData = function() {
+     return this.rawResponseData;
+   };
    // type of Reaper: the type of service used
    this.ReaperType = {};
 
    this.init = function() {
-       this.ReaperType = this.services[serviceType] || null;
+//       this.ReaperType = this.services[serviceType] || null;
+       this.options = this.serviceType;
    };
 
     //Todo: change to receive options parameter
-    this.options = {
-        host: "www.reddit.com",
-        port: 80,
-        path: "/r/girlsinyogapants/new.json?sort=new",
-        method: "GET"
-    };
+//    this.options = {
+//        host: "www.reddit.com",
+//        port: 80,
+//        path: "/r/girlsinyogapants/new.json?sort=new",
+//        method: "GET"
+//    };
 };
 
 
 Reaper.prototype.get = function() {
-
+    var self = this;
+    console.log("REAPER GET");
     http.request(this.options, function(res) {
         console.log('STATUS: ' + res.statusCode);
         console.log('HEADERS: ' + JSON.stringify(res.headers));
         res.setEncoding('utf8');
-        res.on('data', function (chunk) {
-            console.log('BODY: ' + chunk);
+        res.on('data', function (rawResponseData) {
+            console.log('BODY: ' + rawResponseData);
+            self.rawResponseData = rawResponseData;
+            /// ??? from this point on, how to call processItems(rawResponseData) and keep this decoupled and test friendly?
+            // 1. trigger an event like an emit? then on that emit call processItems(this.rawResponseData) -> http://javascriptplayground.com/blog/2014/03/event-emitter/
+//            function _getData(error, rows) {
+//                if (_checkForErrors(error, rows)) {
+//                    return false;
+//                } else {
+//                    this.emit('success', rows[0]);
+//                }
+//            }
+            // 2. some binded callback:
+//            worker.updateCustomer(currentCustomer, _.bind(function(err, data) {
+//                this.showAlert(err || data);
+//            }, notifier));
+//            nota: practicar binding
+//            var currentServiceCb = this.currentService;
+//            _.bind(function(err, data){
+//                this.saveData(err || data);
+//            }, currentServiceCb);
+//            NO NO NO NO
+//            hacer funciones independientes, decoupled y test friendly con sus unit test cada una e invocarlas cuando se llama un init() o algo asi que usa promises
+//            tipo get().then(process(), save()) etc etc y ejecutar las funciones ahi
         });
     }).end();
 
 
-    return {title:"title",image:"image"};
+//    return {title:"title",image:"image"};
+    return this.rawResponseData;
 };
 
 
